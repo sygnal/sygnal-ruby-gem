@@ -20,7 +20,7 @@ class SygnalGenerator
 
 	def generate_sygnal
 	  
-	  uri = URI.parse("http://serene-spire-5496.herokuapp.com//api/v1/sygnals")
+	  uri = URI.parse("http://www.sygnal.io/api/v1/sygnals")
 
 	  post_params = { 
 	  	:access_token => @access_token,
@@ -36,7 +36,6 @@ class SygnalGenerator
 
 	  response = http.request(request)
 
-	  return response.body
-
+	  return response
 	end
 end
