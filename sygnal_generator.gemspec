@@ -4,6 +4,6 @@ Gem::Specification.new do |s|
   s.summary     = "Generates sygnals for the Sygnals app!"
   s.description = "Generates sygnals for the Sygnals app!"
   s.authors     = ["Benjamin R"]
-  s.email       = 'ben@socketstudio.com.com'
+  s.email       = 'ben@socketstudio.com'
   s.files       = ["lib/sygnal_generator.rb"]
 end

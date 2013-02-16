@@ -18,12 +18,13 @@ class SygnalGenerator
 		return @sygnal_type_id
 	end
 
-	def generate_sygnal
+	def generate_sygnal(message)
 	  
 	  uri = URI.parse("http://www.sygnal.io/api/v1/sygnals")
 
 	  post_params = { 
-	    :sygnal_type_id => @sygnal_type_id
+	    :sygnal_type_id => @sygnal_type_id,
+	    :message => message
 	  }
 	 
 	  request = Net::HTTP::Post.new(uri.path)
