@@ -23,13 +23,13 @@ class SygnalGenerator
 	  uri = URI.parse("http://www.sygnal.io/api/v1/sygnals")
 
 	  post_params = { 
-	  	:access_token => @access_token,
 	    :sygnal_type_id => @sygnal_type_id
 	  }
 	 
 	  request = Net::HTTP::Post.new(uri.path)
 	  request.body = JSON.generate(post_params)
-	  request["Content-Type"] = "application/json"
+	  request.add_field("Content-Type", "application/json")
+	  request.add_field("Authorization", "Token token=#{@access_token}")
 	  
 	  http = Net::HTTP.new(uri.host, uri.port)
 	  #http.set_debug_output $stdout #useful to see the raw messages going over the wire
