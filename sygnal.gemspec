@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sygnal'
-  s.version     = '0.0.5'
+  s.version     = '0.0.7'
   s.date        = '2013-02-28'
   s.summary     = "Generates sygnals for Sygnal.io prototype."
   s.description = "Generates sygnals for Sygnal.io prototype."
