@@ -1,0 +1,2 @@
+yardoc --no-private
+'lib/*.rb'
