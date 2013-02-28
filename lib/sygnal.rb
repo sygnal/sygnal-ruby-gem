@@ -1,3 +1,5 @@
+# @author Loren Segal
+
 require 'net/http'
 require 'uri'
 require 'rubygems'
@@ -5,6 +7,7 @@ require 'json'
 
 class SygnalGenerator
 
+	# @param [Integer] sygnal_type_id the sygnal type id
 	def initialize(sygnal_type_id, access_token)
 		@access_token = access_token
 		@sygnal_type_id = sygnal_type_id
