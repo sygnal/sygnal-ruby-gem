@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Benjamin R"]
   s.email       = 'animalrobot@gmail.com'
   s.files       = ["lib/sygnal.rb"]
-  s.homepage    = 'http://rubygems.org/gems/sygnal'
+  s.homepage    = 'https://github.com/sygnal/sygnal-ruby-gem'
 end
