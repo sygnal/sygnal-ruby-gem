@@ -25,7 +25,8 @@ Sample Application
 			'S&P has an 80% liklihood of closing within 0.4% of the high of the day.'  
 		)
 
-		#For now, generate_sygnal returns a Net::Http response object, see Net::Http docs for details
 		puts response.body
+
+		#For now, generate_sygnal returns a Net::Http response object, see Net::Http docs for details
 
 	#end
