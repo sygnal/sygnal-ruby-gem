@@ -21,9 +21,6 @@ Sample Application
 	#create a theoretical event loop here that predicts if S&P 500 is likely to close near high of the day
 	if s_and_p_close_near_high_probability > 0.8
 	
-		s.generate_sygnal(
-			'S&P has an 80% liklihood of closing within 0.2% of the high of the day.  
-			Buying now would create a very favorable risk/reward opportunity.'
-		)
+		s.generate_sygnal('S&P has an 80% liklihood of closing within 0.2% of the high of the day.')
 
 	end
