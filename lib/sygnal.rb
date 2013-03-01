@@ -7,20 +7,25 @@ require 'json'
 
 class SygnalGenerator
 
-	# @param [Integer] sygnal_type_id the sygnal type id
+	# @param [Integer] sygnal_type_id the sygnal type id (create a new SygnalType at Sygnal.io)
+	# @param [String] access_token the api access token (get one at Sygnal.io)
 	def initialize(sygnal_type_id, access_token)
 		@access_token = access_token
 		@sygnal_type_id = sygnal_type_id
 	end
 
+	# @return [String] the SygnalGenerators access token
 	def access_token
 		return @access_token
 	end
 
+	# @return [Integer] the SygnalGenerators access token
 	def sygnal_type_id
 		return @sygnal_type_id
 	end
 
+	# @param [String] message the message body of the Sygnal
+	# @return [Net::HTTPResponse] a Net:HTTP response object (this is temporary and should be fixed asap)
 	def generate_sygnal(message)
 	  
 	  uri = URI.parse("http://www.sygnal.io/api/v1/sygnals")
