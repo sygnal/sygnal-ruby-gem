@@ -22,8 +22,7 @@ Sample Application
 	#if s_and_p_close_near_high_probability > 0.8
 		
 		response = s.generate_sygnal(
-			'S&P has an 80% liklihood of closing within 0.2% of the high of the day.  
-			Buying now would create a very favorable risk/reward opportunity.'
+			'S&P has an 80% liklihood of closing within 0.4% of the high of the day.  
 		)
 
 		#For now, generate_sygnal returns a Net::Http response object, see Net::Http docs for details
